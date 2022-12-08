@@ -1,97 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="option-bookmark"></div>
     <header class="header">
-        <!-- navbar section -->
-        <img src="./images/Personal Assistant.png" alt="" class="logo">
-        <form class="form-section">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="search-apps" placeholder="Search Anything..." onkeyup="search()" class="search" autocomplete="off">
-            <i class="fa-brands fa-google"></i>
-            
-        </form>
+      <!-- navbar section -->
+      <img
+        src="./images/Personal Assistant.png"
+        alt=""
+        class="logo"
+        title="Heading"
+      />
+      <form class="form-section">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          id="search-apps"
+          placeholder="Search Anything..."
+          onkeyup="search()"
+          class="search"
+          autocomplete="off"
+        />
+        <i class="fa-brands fa-google"></i>
+      </form>
+
+      <div class="bookmark-option">
+        <label for="bookmark" class="bookmark-background">
+          <div class="bookmark-circle">
+            <i class="fa-solid fa-bookmark"></i>
+          </div>
+        </label>
+        <div class="bookmark-body">
+          <div class="bookmark-section">
+            <div class="bookmark-section-container">
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div><div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div>
+              <div class="sub-option">bookmark two</div><div class="sub-option">bookmark two</div>
+              
+            </div>
+            <div class="bookmark-add">+</div>
+          </div>
+          <div class="bookmark-head"></div>
+        </div>
+      </div>
+      <div class="account-option">Login/sign Up</div>
     </header>
-    <input type="checkbox" id="side-bar-menu">
+    <input type="checkbox" id="side-bar-menu" />
     <label class="side-bar-closed" for="side-bar-menu"></label>
     <label for="side-bar-menu" class="label-menu">
-        <div class="lable-menu-background">
+      <div class="lable-menu-background">
         <div class="lebel top"></div>
         <div class="lebel middle"></div>
         <div class="lebel bottom"></div>
-    </div>
+      </div>
     </label>
+
     <div class="side-bar">
-        <ul class="menu">
-            <li class="option"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</li>
-            <li class="option"><i class="fa-solid fa-lightbulb"></i>&nbsp;&nbsp;Theme</li>
-            <li class="option"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;login/Sign Up</li>
-        </ul>
+      <ul class="menu">
+        <li class="option">
+          <i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home
+        </li>
+        <li class="option">
+          <i class="fa-solid fa-lightbulb"></i>&nbsp;&nbsp;Theme
+        </li>
+        <li class="option">
+          <i class="fa-solid fa-user"></i>&nbsp;&nbsp;login/Sign Up
+        </li>
+        <li class="option" id="bookmark-side-bar">
+          <i class="fa-solid fa-greater-than" id="arrow"></i
+          >&nbsp;&nbsp;Bookmark
+        </li>
+        <li class="sub-section">
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+          <div class="sub-option">bookmark two</div>
+        </li>
+        <div class="bookmark-add">+</div>
+      </ul>
+    </div>
+    <div class="bookmark-window-background">
+      
+    </div>
+    <div class="bookmark-window">
+      <div class="bookmark-window-container">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      
     </div>
     <main class="main">
-        <div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box two</h2>
-        </div>
-        <div class="box">
-            <h2>Box three</h2>
-        </div>
-        <div class="box">
-            <h2>Box four</h2>
-        </div>
-        <div class="box">
-            <h2>Box five</h2>
-        </div>
-        <div class="box">
-            <h2>Box six</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div><div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div><div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div><div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div>
-        <div class="box">
-            <h2>Box one</h2>
-        </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box two</h2>
+      </div>
+      <div class="box">
+        <h2>Box three</h2>
+      </div>
+      <div class="box">
+        <h2>Box four</h2>
+      </div>
+      <div class="box">
+        <h2>Box five</h2>
+      </div>
+      <div class="box">
+        <h2>Box six</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
+      <div class="box">
+        <h2>Box one</h2>
+      </div>
     </main>
-        <script src="./js/index.js"></script>
-</body>
-
+    <script src="./js/index.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/side-bar.js"></script>
+    <script src="./js/bookmark-window.js"></script>
+  </body>
 </html>
