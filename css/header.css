@@ -1,0 +1,139 @@
+/* header section */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(133, 133, 133);
+  z-index: 3;
+  gap: 5rem;
+}
+/* logo section */
+.logo {
+  max-width: 16rem;
+}
+/* form section */
+.form-section {
+  height: 100%;
+  width: auto;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-section .search {
+  height: 2.8rem;
+  width: 15rem;
+  /* border-radius: 20px 0px; */
+  border: none;
+  outline: none;
+  box-shadow: none;
+  /* width: 100%; */
+  font-size: 16px;
+  font-weight: 300;
+  padding: 8px 10px;
+  /* padding-left: 20px; */
+  transition: all 0.5s ease-in-out;
+}
+
+.form-section .fa-magnifying-glass {
+  background-color: rgb(255, 255, 255);
+  height: 2.8rem;
+  width: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 0px 0px 20px;
+}
+.form-section .fa-google {
+  background-color: #fff;
+  height: 2.8rem;
+  width: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.form-section .fa-google:hover {
+  background-color: rgb(182, 182, 182);
+}
+
+/* login sign up section */
+.account-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 10rem;
+  /* background-color: red; */
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+  border-radius: 50px;
+  /* border: 1px solid rgb(63, 63, 63); */
+  cursor: pointer;
+  background-color: rgb(189, 189, 189);
+  transition: all 0.2s linear;
+}
+.account-option:hover {
+  background-color: rgb(165, 165, 165);
+}
+
+/* responsive section*/
+@media (max-width: 1298px) {
+  .header {
+    gap: 2rem;
+  }
+}
+@media (max-width: 1098px) {
+  .logo {
+    width: 10rem;
+  }
+  .form-section .search {
+    width: 10rem;
+  }
+}
+@media (max-width: 842px) {
+  .logo {
+    display: none;
+  }
+  .header {
+    padding-left: 5rem;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 596px) {
+  .account-option {
+    font-size: 0.8rem;
+    width: 8rem;
+    display: none;
+  }
+
+  .header {
+    padding-left: 2px;
+  }
+}
+@media (max-width: 398px) {
+  .form-section .search {
+    width: 5rem;
+  }
+  .header {
+    padding-left: 3rem;
+  }
+}
+
+/* display part */
+
+.option-display {
+  display: block;
+}
