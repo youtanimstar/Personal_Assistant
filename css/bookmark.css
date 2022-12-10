@@ -58,7 +58,7 @@
 
 .bookmark-section {
   padding: 1rem;
-  height: 250px;
+  max-height: 250px;
   width: 250px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -73,7 +73,7 @@
 }
 
 .bookmark-section .bookmark-section-container {
-  height: calc(250px - 2rem);
+  max-height: calc(250px - 2rem);
   width: 100%;
   overflow: scroll;
 }
@@ -88,14 +88,14 @@
   scrollbar-width: none; /* Firefox */
 }
 .bookmark-section .bookmark-section-container .sub-option {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255);
   width: 100%;
   padding: 1rem;
   height: 2.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  transition: all 0.1s linear;
+  transition: all 0.1s linear; */
   cursor: pointer;
 }
 
@@ -168,25 +168,67 @@
   opacity: 1;
   display: flex;
 
-  padding: 10px;
+  padding: 2rem;
   justify-content: center;
   align-items: center;
   display: none;
   transition: all 0.1s linear;
+  
 }
 
 .bookmark-window-container {
+  position: relative;
   height: 100%;
-  width: 100%;
+  width: 98%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   /* background-color: red; */
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.bookmark-window-h1{
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.option-display {
-  display: block;
+.bookmark-window-name, .bookmark-window-url{
+  outline: none;
+  height: 2rem;
+  width: 90%;
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  transition: all 0.5s linear;
 }
+.bookmark-window .bookmark-window-container .bookmark-window-save{
+  height: 2.5rem;
+  width: 10rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.bookmark-window .bookmark-window-container .bookmark-window-save:hover{
+  background-color: rgb(221, 221, 221);
+}
+.fa-x{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
 
 /* responsive section */
 
@@ -201,4 +243,8 @@
   .bookmark-option {
     display: none;
   }
+}
+
+.option-display {
+  display: block;
 }
