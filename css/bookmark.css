@@ -25,23 +25,32 @@
 .bookmark-circle {
   height: 3rem;
   width: 3rem;
-  background-color: rgb(189, 189, 189);
+  background-color: #F5EFFF;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2 linear;
+  transition: all 0.1s linear;
   cursor: pointer;
+  /* box-shadow: 0px 0px 5px #010114; */
 }
 
 .bookmark-circle:hover {
-  background-color: rgb(165, 165, 165);
+  background-color: #A594F9;
 }
 
 .fa-bookmark {
   font-size: 1.2rem;
-  color: #fff;
+  color: #010114;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+/* .fa-bookmark:hover{
+  color: #333533;
+} */
 
 .bookmark-body {
   position: absolute;
@@ -60,7 +69,7 @@
   padding: 1rem;
   max-height: 250px;
   width: 250px;
-  background-color: rgb(255, 255, 255);
+  background-color: #F5EFFF;
   border-radius: 10px;
   box-shadow: 0px 10px 15px rgb(189, 189, 189);
   z-index: 2;
@@ -102,7 +111,7 @@
 .bookmark-add {
   max-height: 50px;
   width: 100%;
-  background-color: rgb(204, 204, 204);
+  background-color: #CDC1FF;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -116,7 +125,7 @@
 }
 
 .bookmark-add:hover {
-  background-color: rgb(170, 170, 170);
+  background-color: #A594F9;
 }
 
 .bookmark-head {
@@ -125,7 +134,7 @@
   left: 110px;
   height: 30px;
   width: 30px;
-  background-color: rgb(255, 255, 255);
+  background-color: #F5EFFF;
   transform: rotate(45deg);
   z-index: 1;
 }
@@ -150,7 +159,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: #01011462;
   z-index: 4;
   /* opacity: 0.8; */
   backdrop-filter: blur(4px);
@@ -159,7 +168,7 @@
 .bookmark-window {
   height: 80vh;
   width: 50vw;
-  background-color: rgb(255, 255, 255);
+  background-color: #F5EFFF;
   position: fixed;
   z-index: 4;
   top: calc((100% - 80vh) / 2);
@@ -202,11 +211,12 @@
   border-radius: 8px;
   border: 1px solid rgb(0, 0, 0);
   transition: all 0.5s linear;
+  background-color: #F5EFFF;
 }
 .bookmark-window .bookmark-window-container .bookmark-window-save{
   height: 2.5rem;
   width: 10rem;
-  background-color: #fff;
+  background-color: #F5EFFF;
   border: 1px solid #000;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -217,7 +227,7 @@
   transition: all 0.2s linear;
 }
 .bookmark-window .bookmark-window-container .bookmark-window-save:hover{
-  background-color: rgb(221, 221, 221);
+  background-color: #A594F9;
 }
 .fa-x{
   position: absolute;

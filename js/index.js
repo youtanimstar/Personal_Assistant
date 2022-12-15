@@ -10,9 +10,21 @@ const search = () => {
       let textvalue = match.textContent || match.innerHTML;
       if (textvalue.toUpperCase().indexOf(searchBox) > -1) {
         app[i].style.display = "";
-      } else {
-        app[i].style.display = "none";
+        // app[i].classList.remove("big");
+        // app[i].classList.remove("vertical");
+        // app[i].classList.remove("horinzontal")
+        // app[i].classList.toggle("option-nogrid");
       }
+      else {
+        app[i].style.display = "none";
+        // app[i].classList.remove("option-nogrid");
+      }
+      
+      
+      
+    }
+    else{
+      app[0].style.display = "block";
     }
   }
 };

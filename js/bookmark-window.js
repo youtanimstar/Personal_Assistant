@@ -26,7 +26,7 @@ bookmarkSave.addEventListener("click", () => {
   setTimeout(() => {
     bookmarkWindow.classList.toggle("option-display");
     bookmarkWindowBackground.classList.toggle("option-display");
-  }, 1000);
+  }, 1);
 });
 
 bookmarkSave.addEventListener("click", (text = "") => {
@@ -39,7 +39,7 @@ bookmarkSave.addEventListener("click", (text = "") => {
 
   const bookmarkOption = document.createElement("a");
   bookmarkOption.classList.add("sub-option");
-  const BookmarkoptionhtmlData = `<a href="${bookmarkWindowURL}" class="sub-option-link" target="blank"> ${bookmarkWindowName}</a>`;
+  const BookmarkoptionhtmlData = `<img src="./images/web-black.png" alt="" class="favicon"> <a href="${bookmarkWindowURL}" class="sub-option-link" target="blank"> ${bookmarkWindowName}</a>`;
 
   bookmarkOption.insertAdjacentHTML('afterbegin', BookmarkoptionhtmlData);
   const subSection = document.querySelector(".sub-section").appendChild(bookmarkOption);
@@ -53,9 +53,9 @@ bookmarkSave.addEventListener("click", (text = "") => {
     ".bookmark-window-url"
   ).value;
 
-  const bookmarkOption = document.createElement("a");
+  const bookmarkOption = document.createElement("div");
   bookmarkOption.classList.add("sub-option");
-  const BookmarkoptionhtmlData = `<a href="${bookmarkWindowURL}" class="sub-option-link" target="blank"> ${bookmarkWindowName}</a>`;
+  const BookmarkoptionhtmlData = `<img src="./images/web-black.png" alt="" class="favicon"> <a href="${bookmarkWindowURL}" class="sub-option-link" target="blank"> ${bookmarkWindowName}</a>`;
 
   bookmarkOption.insertAdjacentHTML('afterbegin', BookmarkoptionhtmlData);
   const bookmarkSectionContainer = document.querySelector(".bookmark-section-container").appendChild(bookmarkOption);

@@ -8,9 +8,11 @@
 
 html {
   font-size: 16.5px;
+  background-color: #F5EFFF;
 }
 body::-webkit-scrollbar {
   display: none;
+  background-color: #202020;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
