@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="./css/bookmark.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/chatbot.css">
   </head>
   <body>
     <div class="option-bookmark"></div>
-    <header class="header"> 
+    <header class="header">
       <!-- navbar section -->
       <img
         src="./images/Personal Assistant.png"
@@ -49,15 +50,16 @@
         </label>
         <div class="bookmark-body">
           <div class="bookmark-section">
-            <div class="bookmark-section-container">
-              
-            </div>
+            <div class="bookmark-section-container"></div>
             <div class="bookmark-add">+</div>
           </div>
           <div class="bookmark-head"></div>
         </div>
       </div>
-      <div class="account-option">Login/sign Up</div>
+
+      <div class="profile-section">
+        
+      </div>
     </header>
     <input type="checkbox" id="side-bar-menu" />
     <label class="side-bar-closed" for="side-bar-menu"></label>
@@ -104,7 +106,33 @@
         <button class="bookmark-window-save">Save</button>
       </div>
     </div>
+    <div class="chat-bot-window-background"></div>
+    <div class="chat-bot-window">
+      <div class="chat-bot-window-container">
+        <i class="fa-solid fa-x chat-bot-close"></i>
+        <div class="chat-body">
+          <div class="loading hide">
+              <div class="circle circle-1"></div>
+              <div class="circle circle-2"></div>
+              <div class="circle circle-3"></div>
+          </div>
+      </div>
+      <div class="chat-input">
+        <div class="input-sec">
+            <input type="text" id="textinput" placeholder="type here" autofocus>
+
+        </div>
+        <div class="send">
+            <img src="./images/send.png" alt="">
+        </div>
+    </div>
+        
+      </div>
+    </div>
     <main class="main">
+      <div class="chat-bot">
+        <i class="fa-solid fa-headset"></i>
+      </div>
       <div class="box">
         <h2>Box one</h2>
       </div>
@@ -171,5 +199,7 @@
     <script src="./js/side-bar.js"></script>
     <script src="./js/bookmark-window.js"></script>
     <script src="./js/bookmark-option.js"></script>
+    <script type="module" src="./js/chat-bot.js"></script>
+    <!-- <script src="./js/response.js"></script> -->
   </body>
 </html>

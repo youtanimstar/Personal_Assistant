@@ -76,26 +76,7 @@
 }
 
 /* login sign up section */
-.account-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 55px;
-  width: 10rem;
-  /* background-color: red; */
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: #010114;
-  border-radius: 50px;
-  /* border: 1px solid rgb(63, 63, 63); */
-  cursor: pointer;
-  background-color: #F5EFFF;
-  transition: all 0.2s linear;
-}
-.account-option:hover {
-  background-color: #A594F9;
-  /* color: #202020; */
-}
+
 
 /* responsive section*/
 @media (max-width: 1298px) {
@@ -144,4 +125,7 @@
 
 .option-display {
   display: block;
+}
+.slider-input{
+  display: none;
 }

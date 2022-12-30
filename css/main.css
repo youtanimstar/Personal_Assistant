@@ -19,6 +19,7 @@
   grid-auto-rows: 1fr;
   grid-gap: 1rem;
   grid-auto-flow: dense;
+  transition: all 0.5s linear;
 }
 
 .box {
@@ -32,6 +33,7 @@
   cursor: pointer;
   /* width: 18rem;
   height: 18rem; */
+  transition: all 0.5s linear;
 }
 .box h2 {
   font-size: 2rem;
